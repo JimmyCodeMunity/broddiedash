@@ -25,11 +25,11 @@ export const sidebarLinks = [
     },
     {
         id: 3,
-        title: "Meals",
+        title: "Art",
         icon: ChefHat,
         actions: [
-            { id: 1, title: "Add Meal", path: "/meal/add", icon: Plus },
-            { id: 3, title: "View Meals", path: "/meals/view", icon: LayoutList },
+            { id: 1, title: "Add Art", path: "/meal/add", icon: Plus },
+            { id: 3, title: "View Art", path: "/meals/view", icon: LayoutList },
             { id: 2, title: "Add Category", path: "/category/add", icon: Plus },
             { id: 4, title: "View Categories", path: "/category/view", icon: LayoutList },
             // { id: 3, title: "Add Unit", path: "/units/add", icon: Plus },
