@@ -5,14 +5,14 @@ import { ApiContext } from '../context/ApiContext'
 import ReactSwitch from 'react-switch'
 
 const Meals = () => {
-    const { meals, getAllMeals, updateFeatured,updatePopular } = useContext(ApiContext)
+    const { meals, getAllArt, updateFeatured,updatePopular } = useContext(ApiContext)
     const active = "true"
     const inactive = "false"
     return (
         <div className='w-full py-4'>
             <div className="w-full rounded-xl space-y-4 mb-5 shadow p-3">
                 <div className="w-full flex flex-row justify-between items-center">
-                    <h1 className="text-xl">My Meals</h1>
+                    <h1 className="text-xl">My Art</h1>
                     <div className="p-2 rounded-xl flex flex-row justify-center items-center space-x-4">
 
                         <Icon.Printer size={20} className='text-black' />
@@ -22,7 +22,7 @@ const Meals = () => {
                         </button>
                         <Link to="/meal/add" className="text-white flex flex-row items-center bg-black p-2 rounded-md">
                             <Icon.Plus />
-                            Add Meals
+                            Add Art
                         </Link>
                     </div>
 
@@ -50,9 +50,9 @@ const Meals = () => {
                                             meals.map((meal) => {
                                                 return (
                                                     <tr class="hover:bg-gray-100">
-                                                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800">{meal?.mealname}</td>
+                                                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800">{meal?.artname}</td>
                                                         <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800">{meal?.price}</td>
-                                                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800"><img src={`https://smokey.haramad.co.ke/${meal?.image}`} alt="" className="h-10 w-10 rounded-full" /></td>
+                                                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800"><img src={`https://broddie.menthealventures.com/${meal?.image}`} alt="" className="h-10 w-10 rounded-full" /></td>
 
                                                         <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800">{meal?.category}</td>
                                                         <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800">

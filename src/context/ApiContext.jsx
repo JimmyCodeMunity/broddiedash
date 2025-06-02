@@ -41,7 +41,7 @@ export const ApiProvider = ({ children }) => {
     const getAllMeals = async () => {
         setLoading(true)
         try {
-            const response = await axios.get("https://smokey.haramad.co.ke/api/v1/admin/getmeals");
+            const response = await axios.get("https://broddie.menthealventures.com/api/v1/admin/getart");
             const data = response.data;
             setLoading(false)
             setMeals(data)

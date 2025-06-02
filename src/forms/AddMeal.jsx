@@ -6,11 +6,11 @@ import { ApiContext } from '../context/ApiContext'
 import { toast } from 'react-toastify'
 import axios from 'axios'
 const AddMeal = () => {
-    const { categories, getAllMeals } = useContext(ApiContext)
-    const [artname, setArtname] = useState("testart")
-    const [category, setCategory] = useState("test")
-    const [price, setPrice] = useState("123")
-    const [description, setDescription] = useState("sdfsdfsdfd")
+    const { categories, getAllArt } = useContext(ApiContext)
+    const [artname, setArtname] = useState("")
+    const [category, setCategory] = useState("")
+    const [price, setPrice] = useState("")
+    const [description, setDescription] = useState("")
     const [images, setImage] = useState(null)
 
     // const handleImageChange = (e) => {
@@ -83,8 +83,8 @@ const AddMeal = () => {
         <div className='space-y-5'>
             <div className='w-full bg-white shadow rounded-xl space-y-4 p-5'>
                 <div className="w-full flex flex-row items-center justify-between">
-                    <h1 className="text-2xl font-semibold">Add Meal</h1>
-                    <Link to="/meals/view" className="text-orange-500">View Meals</Link>
+                    <h1 className="text-2xl font-semibold">Add Art</h1>
+                    <Link to="/meals/view" className="text-orange-500">View Art</Link>
                 </div>
 
                 <div className="w-full">
@@ -167,7 +167,7 @@ const AddMeal = () => {
                                             onClick={() => handleSelect(cat)}
                                             className="flex items-center space-x-2 p-2 hover:bg-gray-200 cursor-pointer"
                                         >
-                                            <img src={`https://smokey.haramad.co.ke/${cat.image}`} alt={cat.categoryname} className="h-6 w-6 rounded-full object-cover" />
+                                            <img src={`https://broddie.menthealventures.com/${cat.image}`} alt={cat.categoryname} className="h-6 w-6 rounded-full object-cover" />
                                             <span>{cat.categoryname}</span>
                                         </div>
                                     ))}
@@ -205,7 +205,7 @@ const AddMeal = () => {
                         </div>
                         <div className="w-full justify-end items-end flex flex-row">
                             <button type="submit" className="p-2 bg-black rounded-md text-white text-md w-40">
-                                Add Meal
+                                Add Art
                             </button>
                         </div>
                     </form>
