@@ -63,7 +63,7 @@ export const ApiProvider = ({ children }) => {
     const getAllOrders = async () => {
         setLoading(true)
         try {
-            const response = await axios.get("https://smokey.haramad.co.ke/api/v1/admin/getallorders");
+            const response = await axios.get("https://saccoserver.vercel.app/api/v1/admin/getallorders");
             const data = response.data;
             setLoading(false)
             setAllOrders(data)
@@ -119,7 +119,7 @@ export const ApiProvider = ({ children }) => {
     const getPendingOrders = async () => {
         setLoading(true)
         try {
-            const response = await axios.get("https://smokey.haramad.co.ke/api/v1/admin/getpendingorders");
+            const response = await axios.get("https://saccoserver.vercel.app/api/v1/admin/getpendingorders");
             const data = response.data;
             setLoading(false)
             setPendingOrders(data)
@@ -136,7 +136,7 @@ export const ApiProvider = ({ children }) => {
     const getCompletedOrders = async () => {
         setLoading(true)
         try {
-            const response = await axios.get("https://smokey.haramad.co.ke/api/v1/admin/getcompletedorders");
+            const response = await axios.get("https://saccoserver.vercel.app/api/v1/admin/getcompletedorders");
             const data = response.data;
             setLoading(false)
             setCompletedOrders(data)

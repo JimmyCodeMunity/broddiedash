@@ -153,7 +153,7 @@ const AddMeal = () => {
                                         <span>{category}</span>
                                     </div>
                                 ) : (
-                                    <span className="text-neutral-500">Meal Category</span>
+                                    <span className="text-neutral-500">Art Category</span>
                                 )}
                                 <span>▼</span>
                             </div>

@@ -13,7 +13,7 @@ const ProfileCard = () => {
     return (
         <div className="space-y-4">
             <div className='w-full bg-white shadow-md rounded-xl p-4 flex flex-col justify-center items-center space-y-5'>
-                <img src="../logo.jpg" alt="" className="h-32 w-32 rounded-full object-cover border border-orange-500 border-2" />
+                <img src="../broddie.jpeg" alt="" className="h-32 w-32 rounded-full object-cover border border-orange-500 border-2" />
                 <div className="w-full justify-center items-center flex flex-col space-y-2">
                     <h1 className="font-bold text-xl text-black tracking-wide">{userdata?.username}</h1>
                     <p className="text-neutral-500">{userdata?.email}</p>
