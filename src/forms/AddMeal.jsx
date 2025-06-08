@@ -91,11 +91,11 @@ const AddMeal = () => {
                     <form method="post" onSubmit={handleMealUpload} action="" className="w-full space-y-3">
                         <div className="w-full flex md:flex-row flex-col items-center md:space-x-6 space-y-2">
                             <div className='space-y-2 w-full'>
-                                <label htmlFor="" className="text-neutral-500">Meal Name</label>
+                                <label htmlFor="" className="text-neutral-500">Art Name</label>
                                 <input
                                     value={artname}
                                     onChange={(e) => setArtname(e.target.value)}
-                                    type="text" placeholder='edit meal name' className="w-full bg-neutral-100 rounded-md p-2" />
+                                    type="text" placeholder='edit art name' className="w-full bg-neutral-100 rounded-md p-2" />
                             </div>
                             <div className='space-y-2 w-full'>
                                 <label htmlFor="" className="text-neutral-500">Price</label>
@@ -114,7 +114,7 @@ const AddMeal = () => {
                                 <textarea id="message" rows="4" class="block p-2.5 w-full text-sm  bg-neutral-100 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500"
                                     value={description}
                                     onChange={(e) => setDescription(e.target.value)}
-                                    placeholder="Meal description..."></textarea>
+                                    placeholder="art description..."></textarea>
 
                             </div>
 
