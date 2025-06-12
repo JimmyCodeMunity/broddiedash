@@ -46,12 +46,11 @@ import { ApiContext } from "../context/ApiContext";
 
 // Function to process data into sales per month
 const processSalesData = (data) => {
-
   const salesPerMonth = {};
 
   data.forEach((order) => {
     const month = dayjs(order.createdAt).format("MMM"); // Get month abbreviation (e.g., "Jan")
-    const price = parseFloat(order.mealid.price);
+    const price = parseFloat(order.amount);
 
     if (salesPerMonth[month]) {
       salesPerMonth[month] += price;
@@ -64,7 +63,7 @@ const processSalesData = (data) => {
 };
 
 export default function PriceChart() {
-  const { completedorders } = React.useContext(ApiContext)
+  const { completedorders } = React.useContext(ApiContext);
   const salesData = processSalesData(completedorders);
 
   const months = Object.keys(salesData); // Extract months
